@@ -10,4 +10,4 @@ WORKDIR /workspace
 
 ENV STUDENT_ID=2023314722
 ENTRYPOINT ["uvicorn"]
-
+CMD ["--host=0.0.0.0", "--port=80", "main:app"]
